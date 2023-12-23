@@ -1,15 +1,17 @@
 version: "3.5"
 services:
   form-api:
-    # build: ./form-api/
-    image: form-api
+    build:
+      dockerfile: ./Dockerfile
+      context: ./form-api/
     depends_on: ["nats"]
     ports:
       - "8080:8080"
     networks: ["nats"]
   sender-api:
-    # build: ./sender-api/
-    image: sender-api
+    build:
+      dockerfile: ./Dockerfile
+      context: ./sender-api/
     depends_on: ["nats"]
     networks: ["nats"]
   nats:
