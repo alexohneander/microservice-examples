@@ -1,8 +1,8 @@
-# Microservice Examples
+# System Architecture Examples
 
 This repository contains examples of microservices written in go. Each microservice is a separate folder in the root of the repository. Each microservice has its own README.md file with instructions on how to run it.
 
-## Microservices
+## Architectures
 
 | Name | Description | Link |
 | ---- | ----------- | ---- |
