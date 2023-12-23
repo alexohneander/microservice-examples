@@ -18,7 +18,7 @@ func main() {
 		form.Email = r.FormValue("email")
 		form.Text = r.FormValue("text")
 
-		log.Printf("Form Received: %v", form)
+		log.Printf("Form Send: %v", form)
 		nats.Publish(form)
 	})
 
